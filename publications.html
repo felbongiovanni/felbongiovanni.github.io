@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publications</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-body">
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="nav-logo" href="index.html">Felicia Bongiovanni</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#research">Research</a></li>
+        <li><a href="index.html#background">Background</a></li>
+      </ul>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="container">
+      <p class="section-label"></p>
+      <h1>Publications</h1>
+      <p class="lead">A list of all publications to date.</p>
+    </div>
+  </div>
+
+
+  <!-- ===== PUBLICATIONS ===== -->
+  <section class="section" id="publications">
+    <div class="container">
+      <p class="section-label">Papers</p>
+
+      <!-- Filter Bar -->
+      <div class="filter-bar">
+        <div class="filter-group filter-group-status">
+          <button class="filter-btn filter-status active" data-status="all">All</button>
+          <button class="filter-btn filter-status" data-status="published">Published</button>
+          <button class="filter-btn filter-status" data-status="preprint">Pre-prints</button>
+        </div>
+        <div class="filter-group filter-group-topic">
+          <button class="filter-btn filter-topic active" data-cat="all">All Topics</button>
+          <button class="filter-btn filter-topic" data-cat="cat1">Infectious disease modelling</button>
+          <button class="filter-btn filter-topic" data-cat="cat2">Bayesian statistics</button>
+          <button class="filter-btn filter-topic" data-cat="cat3">Serology</button>
+        </div>
+      </div>
+
+      <div class="pub-list">
+
+        <!-- ── 2026 ── -->
+
+        <div class="pub-card" data-status="published" data-cat="cat1">
+          <div class="pub-title">Quantification of the IgG antibody response half-life for hybrid immunity to SARS-CoV-2.</div>
+          <div class="pub-authors"><strong>Bongiovanni, F.</strong>, Conway, E., Smith, L. et al</div>
+          <div class="pub-venue">BMC Medicine 23, 705 (2025)</div>
+          <div class="pub-links"><a href="https://doi.org/10.1186/s12916-025-04490-4">https://doi.org/10.1186/s12916-025-04490-4</a></div>
+        </div>
+        
+        <!-- ── 2024 ── -->
+        
+        <div class="pub-card" data-status="published" data-cat="">
+          <div class="pub-title">Disruption of metazoan gene regulatory networks in cancer alters the balance of co-expression between genes of unicellular and multicellular origins.</div>
+          <div class="pub-authors">Trigos, A.S., <strong>Bongiovanni, F.</strong>, Zhang, Y. et al</div>
+          <div class="pub-venue">Genome Biology 25, 110 (2024)</div>
+          <div class="pub-links"><a href="https://doi.org/10.1186/s13059-024-03247-1">https://doi.org/10.1186/s13059-024-03247-1</a></div>
+        </div>
+        
+        
+        
+  <!-- Footer -->
+ <footer>
+    <div class="footer-inner">
+      <div class="footer-left">
+        <strong>Felicia Bongiovanni</strong><br>
+        PhD Candidate, WEHI · Melbourne, Australia
+      </div>
+      <div class="footer-links">
+        <a href="https://au.linkedin.com/in/felicia-bongiovanni" target="_blank" rel="noopener">Linkedin</a>
+        <a href="https://scholar.google.com/citations?hl=en&user=94XxXnkAAAAJ" target="_blank" rel="noopener">Scholar</a>
+        <a href="https://github.com/felbongiovanni" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('navToggle').addEventListener('click', function() {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+  </script>
+  <script src="js/filter.js"></script>
+  <script src="js/pub-links.js"></script>
+</body>
+</html>
