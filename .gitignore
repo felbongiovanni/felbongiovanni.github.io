@@ -1,6 +1,6 @@
 /.quarto/
 **/*.quarto_ipynb
 .Rproj.user
-*/assets
+assets
 .DS_Store
 .Rhistory
