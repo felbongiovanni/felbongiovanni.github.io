@@ -1,18 +1,13 @@
-/* =========================================================
-   Dhruv Kumar — Personal Website Stylesheet
-   Based on PhantomGrad design system
-   ========================================================= */
-
 /* ---------- Google Fonts ---------- */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 /* ---------- Design Tokens ---------- */
 :root {
-  --bg:           #F5F0E8;
-  --surface:      #EDE8DC;
-  --surface-2:    #E5DFD1;
-  --border:       #D4CCBA;
-  --text:         #1A1A1A;
+  --bg:           #F0F8FF;
+  --surface:      #CAE9F5;
+  --surface-2:    #EEEEEE;
+  --border:       #86C5D8;
+  --text:         #333333;
   --text-muted:   #5C5750;
   --accent:       #2D2D2D;
   --nav-height:   60px;
@@ -314,6 +309,21 @@ img { max-width: 100%; display: block; }
   font-size: 0.82rem;
   color: var(--text-muted);
   margin-top: 0.1rem;
+  white-space: normal;
+  max-width: 600px;
+  overflow-wrap: break-word;
+}
+
+.timeline-right {
+  font-size: 0.82rem;
+  margin-left: auto;
+  text-align: right;
+}
+
+.timeline-main {
+  display: flex;
+  align-items: center; /* centers right text vs title+sub block */
+  flex: 1;
 }
 
 /* ---------- Connect / Contact ---------- */
