@@ -326,6 +326,60 @@ img { max-width: 100%; display: block; }
   flex: 1;
 }
 
+
+/* Publication card */
+.pub-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.1rem 1.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+.pub-card.hidden { display: none; }
+
+.pub-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.pub-title a { text-decoration: none; }
+.pub-title a:hover { text-decoration: underline; }
+
+.pub-authors {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.pub-venue {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.pub-badges { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-top: 0.1rem; }
+
+.pub-links {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.2rem;
+}
+.pub-link {
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0.2rem 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  background: var(--bg);
+  color: var(--text-muted);
+  transition: border-color 0.15s, color 0.15s;
+}
+.pub-link:hover { border-color: var(--accent); color: var(--accent); }
+
 /* ---------- Connect / Contact ---------- */
 .connect-box {
   background: var(--surface);
@@ -415,6 +469,58 @@ footer {
 
   .timeline-item { grid-template-columns: 100px 1fr; }
 }
+
+
+/* ---------- Filter Bar (Publications) ---------- */
+.filter-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  margin-bottom: 1.75rem;
+  position: sticky;
+  top: var(--nav-height);
+  background: var(--bg);
+  padding: 0.75rem 0;
+  z-index: 50;
+  border-bottom: 1px solid var(--border);
+}
+
+.filter-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.filter-group-status .filter-btn {
+  font-size: 0.73rem;
+}
+
+.filter-group-status .filter-btn.active {
+  background: var(--text-muted);
+  color: var(--bg);
+  border-color: var(--text-muted);
+}
+
+.filter-group-topic .filter-btn.active {
+  background: var(--accent);
+  color: var(--bg);
+  border-color: var(--accent);
+}
+
+.filter-btn {
+  font-size: 0.78rem;
+  font-weight: 500;
+  padding: 0.3rem 0.75rem;
+  border-radius: 3px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+.filter-btn:hover { border-color: var(--accent); color: var(--accent); }
 
 /* ---------- Responsive: Mobile ---------- */
 @media (max-width: 600px) {
