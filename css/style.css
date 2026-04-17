@@ -535,7 +535,7 @@ footer {
     gap: 1rem;
     text-align: left;
   }
-  .hero-director-photo { width: 80px; height: 80px; }
+  .hero-director-photo { width: 125px; height: 125px; }
 }
 
 @media (max-width: 480px) {
